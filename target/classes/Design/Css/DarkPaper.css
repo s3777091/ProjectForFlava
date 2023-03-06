@@ -1,0 +1,195 @@
+.background {
+    -fx-background-color: rgba(32,32,32,255);
+}
+
+.GridPane-style {
+    -fx-background-color: rgba(32,32,32,255);
+}
+.paneTody{
+    -fx-background-color: rgba(0,0,0,0.6);
+}
+
+.panehover{
+    -fx-background-color: linear-gradient(to bottom, #f03442, rgba(32,32,32,255));
+}
+
+.linebackgroud{
+    -fx-stroke: linear-gradient(to bottom, #ff7878, #ff786b, #ff795d, #ff7b4e, #ff7e3e);;
+}
+
+.tabIcon{
+    -fx-size: 2em;
+    -fx-fill: white !important;
+}
+
+.tabbar{
+    -fx-background-color: rgba(240,52,66,255);
+}
+
+.text{
+    -fx-fill: white;
+    -fx-font-smoothing-type: lcd;
+}
+
+.slider .track{
+    -fx-background-color: linear-gradient(to right, #ae10d1, #0075ff, #00a0ff, #00bced, #2fd0cc);
+    -fx-background-radius: 0;
+}
+.stackpane {
+    -fx-background-color: #ae10d1;
+}
+
+.button {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 1em; /* 12 */
+}
+
+.button:focused {
+    -fx-border-color: transparent;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid;
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+
+.button:pressed {
+    -fx-text-fill: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+.scroll-pane {
+    -fx-background-color: rgba(0,0,0,0.6);
+    /*-fx-border-color: derive(gray, 100%);*/
+    -fx-padding: 0px;
+}
+
+.scroll-pane .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+
+}
+
+.scroll-pane .scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+    -fx-border-radius: 2em;
+}
+
+.scroll-pane .scroll-bar:horizontal .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0em;
+    -fx-padding: 0 0 10 0;
+
+}
+
+.scroll-pane .scroll-bar:vertical .decrement-button {
+
+    -fx-background-color: transparent;
+    -fx-background-radius: 0em;
+    -fx-padding: 0 10 0 0;
+}
+
+.scroll-pane .scroll-bar .increment-arrow,
+.scroll-pane .scroll-bar .decrement-arrow {
+    -fx-padding: -2;
+}
+
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: derive(black, 90%);
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+}
+
+.progress-bar {
+    -fx-accent: rgba(0, 138, 230, 0.85);
+}
+
+.progress-bar .bar {
+    -fx-padding: 1px;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.progress-bar > .track {
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-text-box-border: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hover_border:hover {
+    -fx-border-color: #0fbcf9;
+    -fx-border-width: 0px 0px 0px 4px;
+    -fx-background-color: #34e7e4e0;
+    -fx-cursor: hand;
+}
+
+.hover_face:hover {
+    -fx-background-color: rgba(50,50,50,255);
+}
+
+
+#SetPane{
+	-fx-background-color: linear-gradient(to bottom, #f03442, rgba(32,32,32,255));
+}
+#PaneOverlay{
+    -fx-background-color: linear-gradient(to bottom,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+}
+#parent{
+    -fx-background-color:  rgba(32,32,32,255);
+}
+#Article{
+    -fx-background-color: rgba(32,32,32,255);
+}
+
+#CovidDisplay{
+    -fx-background-color: rgba(39,39,39,255);
+}
+
+
+#Covid{
+    -fx-image: url("https://i.ibb.co/KXzMMt2/Covidi-CON.png");
+}
+
+
+#World{
+    -fx-image: url("https://i.ibb.co/JB528P4/World.png");
+}
+
+#Entertainment{
+    -fx-image: url("https://i.ibb.co/phF5fg5/entertainment-Icon.png");
+}
+
+#sportIcon{
+    -fx-image: url("https://i.ibb.co/qJBMpMm/fonctionnement.png");
+}
+
+#Health{
+    -fx-image: url("https://i.ibb.co/r5pksS9/health-Icon.png");
+}
+
+#Business{
+    -fx-image: url("https://i.ibb.co/C6pR6Kq/Business.png");
+}
+#law{
+    -fx-image: url("https://i.ibb.co/gtQYtJr/gavel.png");
+}
+
+#OtherIcon{
+    -fx-image: url("https://i.ibb.co/ZYxFHCK/other-Icon.png");
+}
+#newsest{
+    -fx-image: url("https://i.ibb.co/b57XgsB/nouveau.png");
+}
+#PaneOverlay{
+    -fx-background-color: linear-gradient(to bottom,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+}
+
+#Technology{
+    -fx-image: url("https://i.ibb.co/YcqxDLp/technology.png");
+}

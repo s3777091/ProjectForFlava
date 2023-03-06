@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="parent" cache="true" cacheHint="SPEED" depthTest="ENABLE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="742.0" prefWidth="1434.0" styleClass="background" stylesheets="@Css/DarkPaper.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <center>
+      <VBox prefHeight="754.0" prefWidth="1416.0" spacing="10.0" styleClass="background" BorderPane.alignment="CENTER">
+         <HBox prefHeight="5.0" prefWidth="1360.0">
+            <children>
+               <ProgressBar fx:id="progressBar" opacity="0.0" prefHeight="0.0" prefWidth="1360.0" progress="0.0" />
+            </children>
+         </HBox>
+
+         <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="584.0" prefWidth="1292.0" styleClass="GridPane-style" VBox.vgrow="ALWAYS">
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
+            <GridPane fx:id="NewsGrid" alignment="CENTER_LEFT" cache="true" cacheHint="SPEED" depthTest="ENABLE" styleClass="GridPane-style">
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <columnConstraints>
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+                  <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+                  <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+                  <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+                  <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+                  <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+                  <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+                  <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+                  <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+                  <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+                  <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+               </columnConstraints>
+            </GridPane>
+         </ScrollPane>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="612.0" prefWidth="74.0" spacing="10.0" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" maxHeight="40.0" maxWidth="40.0" minHeight="40.0" minWidth="40.0" prefHeight="40.0" prefWidth="40.0">
+               <children>
+                  <HBox>
+                     <children>
+                        <Line fx:id="lineNewest" endX="40.0" endY="35.0" opacity="0.0" startX="40.0" startY="-6.0" stroke="#34fa7a" strokeLineJoin="BEVEL" strokeWidth="5.0" styleClass="linebackgroud">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin></Line>
+                        <Button mnemonicParsing="false" onAction="#Newest">
+                           <graphic>
+                              <ImageView fx:id="newsest" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="https://i.ibb.co/b57XgsB/nouveau.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Line fx:id="lineTrashTheThao" endX="40.0" endY="35.0" opacity="0.0" startX="40.0" startY="-6.0" stroke="#34fa7a" strokeLineJoin="BEVEL" strokeWidth="5.0">
+                           <cursor>
+                              <Cursor fx:constant="NONE" />
+                           </cursor>
+                        </Line>
+                        <Button mnemonicParsing="false" onAction="#Thethao" prefHeight="40.0" prefWidth="40.0">
+                           <graphic>
+                              <ImageView fx:id="sportIcon" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="https://i.ibb.co/qJBMpMm/fonctionnement.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Line fx:id="lineTrashCovid" endX="40.0" endY="35.0" opacity="0.0" startX="40.0" startY="-6.0" stroke="#34fa7a" strokeLineJoin="BEVEL" strokeWidth="5.0" />
+                        <Button mnemonicParsing="false" onAction="#Covid" prefHeight="40.0" prefWidth="40.0">
+                           <graphic>
+                              <ImageView fx:id="Covid" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="https://i.ibb.co/KXzMMt2/Covidi-CON.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Line fx:id="lineTrashPhapLuat" endX="40.0" endY="35.0" opacity="0.0" startX="40.0" startY="-6.0" stroke="#34fa7a" strokeLineJoin="BEVEL" strokeWidth="5.0" />
+                        <Button mnemonicParsing="false" onAction="#Politics" prefHeight="40.0" prefWidth="40.0">
+                           <graphic>
+                              <ImageView fx:id="law" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="https://i.ibb.co/gtQYtJr/gavel.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Line fx:id="lineTrashKinhDoanh" endX="40.0" endY="35.0" opacity="0.0" startX="40.0" startY="-6.0" stroke="#34fa7a" strokeLineJoin="BEVEL" strokeWidth="5.0" />
+                        <Button mnemonicParsing="false" onAction="#Business" prefHeight="40.0" prefWidth="40.0">
+                           <graphic>
+                              <ImageView fx:id="Business" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="https://i.ibb.co/C6pR6Kq/Business.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Line fx:id="lineTrashCongNghe" endX="40.0" endY="35.0" opacity="0.0" startX="40.0" startY="-6.0" stroke="#34fa7a" strokeLineJoin="BEVEL" strokeWidth="5.0" />
+                        <Button mnemonicParsing="false" onAction="#Technology" prefHeight="40.0" prefWidth="40.0">
+                           <graphic>
+                              <ImageView fx:id="Technology" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="https://i.ibb.co/YcqxDLp/technology.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Line fx:id="lineTrashSucKhoe" endX="40.0" endY="35.0" opacity="0.0" startX="40.0" startY="-6.0" stroke="#34fa7a" strokeLineJoin="BEVEL" strokeWidth="5.0" />
+                        <Button mnemonicParsing="false" onAction="#Health" prefHeight="40.0" prefWidth="40.0">
+                           <graphic>
+                              <ImageView fx:id="Health" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="https://i.ibb.co/r5pksS9/health-Icon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Line fx:id="lineTrashGiaiTri" endX="40.0" endY="35.0" opacity="0.0" startX="40.0" startY="-6.0" stroke="#34fa7a" strokeLineJoin="BEVEL" strokeWidth="5.0" />
+                        <Button mnemonicParsing="false" onAction="#Entertainment" prefHeight="40.0" prefWidth="40.0">
+                           <graphic>
+                              <ImageView fx:id="Entertainment" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="https://i.ibb.co/phF5fg5/entertainment-Icon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Line fx:id="lineTrashTheGioi" endX="40.0" endY="35.0" opacity="0.0" startX="40.0" startY="-6.0" stroke="#34fa7a" strokeLineJoin="BEVEL" strokeWidth="5.0" />
+                        <Button mnemonicParsing="false" onAction="#World" prefHeight="40.0" prefWidth="40.0">
+                           <graphic>
+                              <ImageView fx:id="World" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="https://i.ibb.co/JB528P4/World.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Line fx:id="lineTrashKhac" endX="40.0" endY="35.0" opacity="0.0" startX="40.0" startY="-6.0" stroke="#34fa7a" strokeLineJoin="BEVEL" strokeWidth="5.0" />
+                        <Button mnemonicParsing="false" onAction="#Other" prefHeight="40.0" prefWidth="40.0">
+                           <graphic>
+                              <ImageView fx:id="OtherIcon" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="https://i.ibb.co/ZYxFHCK/other-Icon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#ChangeMode">
+                           <graphic>
+                              <ImageView fx:id="DarkMode" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <Image url="https://i.ibb.co/sCwP9Pr/sun.png" />
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" />
+                     </VBox.margin></HBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <bottom>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="8.0" prefWidth="1509.0" BorderPane.alignment="BOTTOM_CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#PG1" text="1" />
+            <Button mnemonicParsing="false" onAction="#PG2" text="2" />
+            <Button mnemonicParsing="false" onAction="#PG3" text="3" />
+            <Button mnemonicParsing="false" onAction="#PG4" text="4" />
+            <Button mnemonicParsing="false" onAction="#PG5" text="5" />
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <VBox fx:id="CovidDisplay" alignment="TOP_RIGHT" prefHeight="62.0" prefWidth="1434.0" style="-fx-background-color: rgba(39,39,39,255);" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="TOP_RIGHT" prefHeight="26.0" prefWidth="1434.0" spacing="30.0" styleClass="tabbar">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_CENTER" maxHeight="239.0" minHeight="35.0" prefHeight="88.0" prefWidth="1434.0" styleClass="paneTody">
+               <Label prefHeight="45.0" prefWidth="105.0" styleClass="text" text="Today">
+                  <font>
+                     <Font name="Arial Bold" size="27.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets />
+                  </HBox.margin>
+               </Label>
+               <Label fx:id="DynamicCaNhiem" prefHeight="46.0" prefWidth="233.0" text="Infected:">
+                  <font>
+                     <Font name="Arial Bold" size="27.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets />
+                  </HBox.margin>
+               </Label>
+               <Label fx:id="Cases" prefHeight="44.0" prefWidth="202.0">
+                  <font>
+                     <Font size="27.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets />
+                  </HBox.margin>
+               </Label>
+               <Label fx:id="DynamicHoiPhuc" prefHeight="45.0" prefWidth="207.0" text="Recovered:">
+                  <font>
+                     <Font name="Arial" size="27.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets />
+                  </HBox.margin>
+               </Label>
+               <Label fx:id="recovered" prefHeight="50.0" prefWidth="226.0">
+                  <font>
+                     <Font name="Arial" size="27.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets />
+                  </HBox.margin>
+               </Label>
+               <Label prefHeight="46.0" prefWidth="169.0" text="Deceased:">
+                  <font>
+                     <Font name="Arial" size="27.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets />
+                  </HBox.margin>
+               </Label>
+               <Label fx:id="death" prefHeight="51.0" prefWidth="197.0">
+                  <font>
+                     <Font name="Arial Bold" size="27.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets />
+                  </HBox.margin>
+               </Label>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </top>
+</BorderPane>

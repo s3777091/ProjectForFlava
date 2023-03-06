@@ -1,0 +1,193 @@
+.background {
+    -fx-background-color: rgba(168,183,188,255);
+}
+
+.GridPane-style {
+    -fx-background-color: rgba(168,183,188,255);
+}
+
+.paneTody{
+    -fx-background-color: rgb(159, 124, 88);
+}
+
+
+.tabIcon{
+    -fx-size: 2em;
+    -fx-fill: black !important;
+}
+
+.linebackgroud{
+    -fx-stroke: linear-gradient(to bottom, #ff7878, #ff786b, #ff795d, #ff7b4e, #ff7e3e);;
+}
+
+.text{
+    -fx-fill: black;
+    -fx-font-smoothing-type: lcd;
+}
+
+.slider .track{
+    -fx-background-color: linear-gradient(to right, #293331, #004b5a, #005e9d, #205fd3, #c92fd0);
+    -fx-background-radius: 0;
+}
+
+.stackpane {
+    -fx-background-color: #051937;
+}
+
+.button {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 1em; /* 12 */
+}
+
+.button:focused {
+    -fx-border-color: transparent;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid;
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+
+.tabbar{
+    -fx-background-color: rgba(240,52,66,255);
+}
+
+.button:pressed {
+    -fx-text-fill: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-padding: 0px;
+}
+
+.scroll-pane .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+
+}
+
+.scroll-pane .scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+    -fx-border-radius: 2em;
+}
+
+.scroll-pane .scroll-bar:horizontal .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0em;
+    -fx-padding: 0 0 10 0;
+
+}
+
+.scroll-pane .scroll-bar:vertical .decrement-button {
+
+    -fx-background-color: transparent;
+    -fx-background-radius: 0em;
+    -fx-padding: 0 10 0 0;
+}
+
+.scroll-pane .scroll-bar .increment-arrow,
+.scroll-pane .scroll-bar .decrement-arrow {
+    -fx-padding: -2;
+}
+
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: derive(black, 90%);
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+}
+
+.progress-bar {
+    -fx-accent: rgba(0, 138, 230, 0.85);
+}
+
+.progress-bar .bar {
+    -fx-padding: 1px;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.progress-bar > .track {
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-text-box-border: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hover_border:hover {
+    -fx-border-color: #0fbcf9;
+    -fx-border-width: 0px 0px 0px 4px;
+    -fx-background-color: #34e7e4e0;
+    -fx-cursor: hand;
+}
+
+.hover_face:hover {
+    -fx-background-color: #e2e2e2;
+}
+
+#SetPane{
+	-fx-background-color: linear-gradient(to bottom, #f03442, rgba(168,183,188,255));
+}
+#parent{
+    -fx-background-color: rgba(168,183,188,255);
+}
+#Article{
+    -fx-background-color: rgba(168,183,188,255);
+}
+
+#PaneOverlay{
+    -fx-background-color: linear-gradient(to bottom,  rgba(200,200,200,0) 0%, rgba(200,200,200,1) 100%);
+}
+
+#CovidDisplay{
+    -fx-background-color: rgba(255,255,255,1);
+}
+
+#Covid{
+    -fx-image: url("https://i.ibb.co/s1hVqdH/Dark-Covidi-CON.png");
+}
+
+#World{
+    -fx-image: url("https://i.ibb.co/Hg7NW2K/Dark-World.png");
+}
+
+#Entertainment{
+    -fx-image: url("https://i.ibb.co/z4NJGyS/Darkentertainment-Icon.png");
+}
+
+#Health{
+    -fx-image: url("https://i.ibb.co/7QMJRGp/Darkhealth-Icon.png");
+}
+
+#Business{
+    -fx-image: url("https://i.ibb.co/S0K4Qyy/Dark-Business-Icon.png");
+}
+
+#sportIcon{
+    -fx-image: url("https://i.ibb.co/mqGBs97/sportlight.png");
+}
+
+#Politics{
+    -fx-image: url("https://i.ibb.co/gVwgf94/Darkpolitics-Icon.png");
+}
+#OtherIcon{
+    -fx-image: url("https://i.ibb.co/qyscWSC/Darkother-Icon.png");
+}
+
+#newsest{
+    -fx-image: url("https://i.ibb.co/N2D2YwJ/newsDark.png");
+}
+
+#law{
+    -fx-image: url("https://i.ibb.co/dWSfc27/justice.png");
+}
+
+#Technology{
+    -fx-image: url("https://i.ibb.co/GtS3n4P/Darktechnology.png");
+}

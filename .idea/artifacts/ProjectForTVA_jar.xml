@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ProjectForTVA:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ProjectForTVA_jar</output-path>
+    <root id="archive" name="ProjectForTVA.jar">
+      <element id="library" level="project" name="jsoup-1.14.1" />
+      <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.11" />
+      <element id="library" level="project" name="Maven: org.json:json:20210307" />
+      <element id="library" level="project" name="Maven: org.jsoup:jsoup:1.14.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:16" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:win:16" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:16" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:win:16" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:16" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:win:16" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:16" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:win:16" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-media:16" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-media:win:16" />
+    </root>
+  </artifact>
+</component>
